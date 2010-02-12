@@ -1,0 +1,942 @@
+@Article{Fernandez:2004:MM,
+  author =       "Francisco {Fernandez de Vega} and J. I. Hidalgo and 
+                 J. Lanchares and J. M. Sanchez",
+  title =        "A methodology for reconfigurable hardware design based
+                 upon evolutionary computation",
+  journal =      "Microprocessors and Microsystems",
+  year =         "2004",
+  volume =       "28",
+  number =       "7",
+  pages =        "363--371",
+  month =        sep,
+  email =        "fcofdez@unex.es",
+  keywords =     "genetic algorithms, genetic programming,
+                 reconfigurable hardware, Field programmable gate
+                 arrays, Compact genetic algorithm, Configurable logic
+                 blocks",
+  ISSN =         "0141-9331",
+  URL =          "http://www.sciencedirect.com/science/article/B6V0X-4C4BWW7-1/2/815fe7c17a6207d7a31f8046e4e2a5d1",
+  doi =          "doi:10.1016/j.micpro.2004.03.017",
+  size =         "9 pages",
+  abstract =     "We present a methodology for Multi-FPGA systems (MFS)
+                 design. MFSs are used for a great variety of
+                 applications, including dynamically re-configurable
+                 hardware applications, digital circuit emulation, and
+                 numerical computation. There are a great variety of
+                 boards for MFS implementation. We have employed a set
+                 of techniques based on evolutionary algorithms, and we
+                 show that they are capable of solving all of the design
+                 tasks (partitioning placement and routing). Firstly a
+                 hybrid compact genetic algorithm solves the
+                 partitioning problem and then genetic programming is
+                 used to obtain a solution for the two other tasks.",
+}
+
+@Article{Fernandez:2003:GPEM,
+  author =       "Francisco Fernandez and Marco Tomassini and 
+                 Leonardo Vanneschi",
+  title =        "An Empirical Study of Multipopulation Genetic
+                 Programming",
+  journal =      "Genetic Programming and Evolvable Machines",
+  year =         "2003",
+  volume =       "4",
+  number =       "1",
+  pages =        "21--51",
+  month =        mar,
+  keywords =     "genetic algorithms, genetic programming, distributed
+                 evolutionary algorithms, parallel algorithms,
+                 structured populations",
+  ISSN =         "1389-2576",
+  doi =          "doi:10.1023/A:1021873026259",
+  abstract =     "This paper presents an experimental study of
+                 distributed multipopulation genetic programming. Using
+                 three well-known benchmark problems and one real-life
+                 problem, we discuss the role of the parameters that
+                 characterise the evolutionary process of standard
+                 panmictic and parallel genetic programming. We find
+                 that distributing individuals between subpopulations
+                 offers in all cases studied here an advantage both in
+                 terms of the quality of solutions and of the
+                 computational effort spent, when compared to single
+                 populations. We also study the influence of
+                 communication patterns such as the communication
+                 topology, the number of individuals exchanged and the
+                 frequency of exchange on the evolutionary process. We
+                 empirically show that the topology does not have a
+                 marked influence on the results for the test cases
+                 studied here, while the frequency and number of
+                 individuals exchanged are related and there exists a
+                 suitable range for those parameters which is
+                 consistently similar for all the problems studied.",
+  notes =        "Article ID: 5113071",
+}
+
+@PhdThesis{fernandez:thesis,
+  author =       "Francisco Fernandez {de Vega}",
+  title =        "Distributed Genetic Programming Models with
+                 Application to Logic Synthesis on {FPGA}s",
+  school =       "University of Extremadura",
+  year =         "2001",
+  email =        "fcofdez@unex.es",
+  keywords =     "genetic algorithms, genetic programming,
+                 reconfigurable hardware",
+  URL =          "http://cum.unex.es/profes/profes/fcofdez/escritorio/investigacion/pgp/thesis/phd.html",
+  size =         "156 pages",
+  notes =        "For Spanish version see
+                 \cite{fernandez:thesis:espanol}
+
+                 CONCLUSIONS AND FINAL REMARKS
+
+                 We have presented a new implementation of GP - based on
+                 MPI - which allows us to make use of parallelism as
+                 well as experimenting with different communication
+                 topologies and GP parameters
+
+                 We have compared performances of this methodology
+                 ?PADGP ? with classic GP. The tool was applied to the
+                 study of two important parameters that affect
+                 convergence results on PADGP: the number and size of
+                 populations. By means of this study, we have observed
+                 the existence of a region of effort which defines the
+                 best number of individuals we must use when employing a
+                 given number of populations with PADGP.
+
+                 This region of effort has been detected both in
+                 benchmark problems and in ?real life? problems.
+
+                 We have also presented random topology as a way of
+                 improving convergence when using PADGP.
+
+                 We have used PADGP with random topology and compared it
+                 to classic GP. This comparison showed that the former
+                 gives better results.
+
+                 We have also compared random topology and grid topology
+                 and we have shown that results are similar.
+                 Nevertheless random topology requires a smaller amount
+                 of communication processes.
+
+                 We have presented a methodology that is based on PADGP,
+                 and which aids medical diagnosing. We used this problem
+                 to check the validity of results obtained in the
+                 benchmark problem, while we also proposed PADGP as an
+                 appropriate methodology for extracting medical
+                 knowledge.
+
+                 We have studied isolated subpopulations (IMGP) as a
+                 limit case of PADGP and we have experimentally seen
+                 that IMGP obtains similar convergence results than GP;
+                 sometimes results are even better if the total number
+                 of individuals is high.
+
+                 We have then dealt with an optimisation problem: the
+                 problem of placement and routing on FPGAs. We have
+                 developed a new methodology based on GP, and this
+                 allows us to represent circuits by means of GP trees.
+                 Furthermore, the methodology achieved the proposed
+                 goal: finding several ways of placing and routing
+                 circuits on reconfigurable hardware. The problem was
+                 later used for checking the conclusions which had been
+                 reached in the first part of this research. All
+                 statistical results obtained are in agreement with
+                 those obtained from benchmark problems.
+
+                 We think that the main goals we established at the
+                 beginning have been achieved: checking the usefulness
+                 of PADGP with random communications and developing a
+                 methodology for logic synthesis on FPGAs. In the
+                 researching process we discovered the concept of region
+                 of effort and we obtained interesting conclusions via
+                 the use of IMGP.
+
+                 Results we obtained during our research have been
+                 published in the main conferences and reviews that deal
+                 with the different topics addressed in this thesis (see
+                 References).",
+}
+
+@InProceedings{tomassini:2004:antfdspigp,
+  title =        "A New Technique for Dynamic Size Populations in
+                 Genetic Programming",
+  author =       "Marco Tomassini and Leonardo Vanneschi and 
+                 Jerome Cuendet and Francisco Fernandez",
+  pages =        "486--493",
+  booktitle =    "Proceedings of the 2004 IEEE Congress on Evolutionary
+                 Computation",
+  year =         "2004",
+  publisher =    "IEEE Press",
+  month =        "20-23 " # jun,
+  address =      "Portland, Oregon",
+  ISBN =         "0-7803-8515-2",
+  keywords =     "genetic algorithms, genetic programming, Theory of
+                 evolutionary algorithms, Multiobjective evolutionary
+                 algorithms",
+  abstract =     "New techniques for dynamically changing the size of
+                 populations during the execution of genetic programming
+                 systems are proposed. Two models are presented,
+                 allowing to add and suppress individuals on the basis
+                 of some particular events occurring during the
+                 evolution. These models allow to find solutions of
+                 better quality, to save considerable amounts of
+                 computational effort and to find optimal solutions more
+                 quickly, at least for the set of problems studied here,
+                 namely the artificial ant on the Santa Fe trail, the
+                 even parity 5 problem and one instance of the symbolic
+                 regression problem. Furthermore, these models have a
+                 positive effect on the well known problem of bloat and
+                 act without introducing additional computational
+                 cost.",
+  notes =        "CEC 2004 - A joint meeting of the IEEE, the EPS, and
+                 the IEE.",
+}
+
+@InProceedings{fernandez:2004:eurogp,
+  author =       "Francisco Fernandez and Aida Martin",
+  title =        "Saving Effort in Parallel {GP} by means of Plagues",
+  booktitle =    "Genetic Programming 7th European Conference, EuroGP
+                 2004, Proceedings",
+  year =         "2004",
+  editor =       "Maarten Keijzer and Una-May O'Reilly and 
+                 Simon M. Lucas and Ernesto Costa and Terence Soule",
+  volume =       "3003",
+  series =       "LNCS",
+  pages =        "269--278",
+  address =      "Coimbra, Portugal",
+  publisher_address = "Berlin",
+  month =        "5-7 " # apr,
+  organisation = "EvoNet",
+  publisher =    "Springer-Verlag",
+  keywords =     "genetic algorithms, genetic programming",
+  ISBN =         "3-540-21346-5",
+  URL =          "http://www.springerlink.com/openurl.asp?genre=article&issn=0302-9743&volume=3003&spage=269",
+  abstract =     "Plague, a new technique that allows Genetic
+                 Programming to save computing resources, has been
+                 proposed. By removing some individuals every
+                 generation, plague aims at compensating for the
+                 increase in size of individuals, thus saving computing
+                 time when looking for solutions. By means of some test
+                 problems, we show that the technique is also useful
+                 when employing a parallel version of GP, such as that
+                 based on the island model.",
+  notes =        "Part of \cite{keijzer:2004:GP} EuroGP'2004 held in
+                 conjunction with EvoCOP2004 and EvoWorkshops2004",
+}
+
+@InProceedings{Fernandez:PPSN:2004,
+  author =       "Francisco Fernandez-de-Vega and German Galeano Gil and 
+                 Juan Antonio Gomez Pulido and Jose Luis Guisado",
+  title =        "Control of bloat in Genetic Programming by means of
+                 the Island Model",
+  booktitle =    "Parallel Problem Solving from Nature - PPSN VIII",
+  year =         "2004",
+  editor =       "Xin Yao and Edmund Burke and Jose A. Lozano and 
+                 Jim Smith and Juan J. Merelo-Guerv\'os and 
+                 John A. Bullinaria and Jonathan Rowe and 
+                 Peter Ti\v{n}o Ata Kab\'an and Hans-Paul Schwefel",
+  volume =       "3242",
+  pages =        "263--271",
+  series =       "LNCS",
+  address =      "Birmingham, UK",
+  publisher_address = "Berlin",
+  month =        "18-22 " # sep,
+  publisher =    "Springer-Verlag",
+  keywords =     "genetic algorithms, genetic programming",
+  ISBN =         "3-540-23092-0",
+  URL =          "http://www.springerlink.com/openurl.asp?genre=article&issn=0302-9743&volume=3242&spage=263",
+  doi =          "doi:10.1007/b100601",
+  abstract =     "a new proposal for reducing bloat in Genetic
+                 Programming. This proposal is based in a well-known
+                 parallel evolutionary model: the island model. We
+                 firstly describe the theoretical motivation for this
+                 new approach to the bloat problem, and then we present
+                 a set of experiments that gives us evidence of the
+                 findings extracted from the theory. The experiments
+                 have been performed on a representative problem
+                 extracted from the GP field: the even parity 5 problem.
+                 We analyse the evolution of bloat employing different
+                 settings for the parameters employed. The conclusion is
+                 that the Island Model helps to prevent the bloat
+                 phenomenon.",
+  notes =        "PPSN-VIII",
+}
+
+@InProceedings{tomassini:2003:gecco,
+  author =       "Marco Tomassini and Leonardo Vanneschi and 
+                 Francisco Fern{\'a}ndez and Germ{\'a}n Galeano",
+  title =        "Diversity in Multipopulation Genetic Programming",
+  booktitle =    "Genetic and Evolutionary Computation -- GECCO-2003",
+  editor =       "E. Cant{\'u}-Paz and J. A. Foster and K. Deb and 
+                 D. Davis and R. Roy and U.-M. O'Reilly and H.-G. Beyer and 
+                 R. Standish and G. Kendall and S. Wilson and 
+                 M. Harman and J. Wegener and D. Dasgupta and M. A. Potter and 
+                 A. C. Schultz and K. Dowsland and N. Jonoska and 
+                 J. Miller",
+  year =         "2003",
+  pages =        "1812--1813",
+  address =      "Chicago",
+  publisher_address = "Berlin",
+  month =        "12-16 " # jul,
+  volume =       "2724",
+  series =       "LNCS",
+  ISBN =         "3-540-40603-4",
+  publisher =    "Springer-Verlag",
+  keywords =     "genetic algorithms, genetic programming, poster",
+  abstract =     "In the past few years, we have done a systematic
+                 experimental investigation of the behavior of
+                 multipopulation GP [2] and we have empirically observed
+                 that distributing the individuals among several loosely
+                 connected islands allows not only to save computation
+                 time, due to the fact that the system runs on multiple
+                 machines, but also to find better solution quality.
+                 These results have often been attributed to better
+                 diversity maintenance due to the periodic migration of
+                 groups of {"}good{"} individuals among the
+                 subpopulations. We also believe that this might be the
+                 case and we study the evolution of diversity in
+                 multi-island GP. All the diversity measures that we use
+                 in this paper are based on the concept of entropy of a
+                 population , defined as . If we are considering
+                 phenotypic diversity, we define Fj as the fraction of
+                 individuals in having a certain fitness , where is the
+                 total number of fitness values in . In this case, the
+                 entropy measure will be indicated as or simply Hp. To
+                 define genotypic diversity, we use two different
+                 techniques. The first one consists in partitioning
+                 individuals in such a way that only identical
+                 individuals belong to the same group. In this case, we
+                 have considered Fj as the fraction of trees in the
+                 population having a certain genotype , where is the
+                 total number of genotypes in and the entropy measure
+                 will be indicated as or simply HG. The second technique
+                 consists in defining a distance measure, able to
+                 quantify the genotypic diversity between two trees. In
+                 this case, Fj is the fraction of individuals having a
+                 given distance from a fixed tree (called origin), where
+                 is the total number of distance values from the origin
+                 appearing in and the entropy measure will be indicated
+                 as or simply Hg. The tree distance used is Ekart's and
+                 Nemeth's definition [1].",
+  notes =        "GECCO-2003. A joint meeting of the twelfth
+                 International Conference on Genetic Algorithms
+                 (ICGA-2003) and the eighth Annual Genetic Programming
+                 Conference (GP-2003)",
+}
+
+@InProceedings{tomassini:2003:EA,
+  author =       "Marco Tomassini and Leonardo Vanneschi and 
+                 Francisco Fernandez and German Galeano",
+  title =        "A Study of Diversity in Multipopulation Genetic
+                 Programming",
+  booktitle =    "Evolution Artificielle, 6th International Conference",
+  year =         "2003",
+  editor =       "Pierre Liardet and Pierre Collet and Cyril Fonlupt and 
+                 Evelyne Lutton and Marc Schoenauer",
+  volume =       "2936",
+  series =       "Lecture Notes in Computer Science",
+  pages =        "243--255",
+  address =      "Marseilles, France",
+  month =        "27-30 " # oct,
+  publisher =    "Springer",
+  note =         "Revised Selected Papers",
+  keywords =     "genetic algorithms, genetic programming, Artificial
+                 Evolution",
+  ISBN =         "3-540-21523-9",
+  URL =          "http://springerlink.metapress.com/openurl.asp?genre=article&issn=0302-9743&volume=2936&spage=243",
+  doi =          "doi:10.1007/b96080",
+  size =         "13 pages",
+  abstract =     "using multiple communicating populations instead of a
+                 single panmictic one may help in maintaining diversity
+                 during GP runs. After defining suitable genotypic and
+                 phenotypic diversity measures, we apply them to three
+                 standard test problems. The experimental results
+                 indicate that using multiple populations helps in
+                 maintaining phenotypic diversity. We hypothesise that
+                 this could be one of the reasons for the better
+                 performance observed for distributed GP with respect to
+                 panmictic GP. Finally, we trace a sort of history of
+                 the optimum individual for a set of distributed GP
+                 runs, trying to understand the dynamics that help in
+                 maintaining diversity in distributed GP.",
+  bibsource =    "DBLP, http://dblp.uni-trier.de",
+  notes =        "EA'03",
+}
+
+@InProceedings{fernandez:2003:sceigpbmop,
+  author =       "F. Fernandez and M. Tomassini and L. Vanneschi",
+  title =        "Saving computational effort in genetic programming by
+                 means of plagues",
+  booktitle =    "Proceedings of the 2003 Congress on Evolutionary
+                 Computation CEC2003",
+  editor =       "Ruhul Sarker and Robert Reynolds and 
+                 Hussein Abbass and Kay Chen Tan and Bob McKay and Daryl Essam and 
+                 Tom Gedeon",
+  pages =        "2042--2049",
+  year =         "2003",
+  publisher =    "IEEE Press",
+  address =      "Canberra",
+  publisher_address = "445 Hoes Lane, P.O. Box 1331, Piscataway, NJ
+                 08855-1331, USA",
+  month =        "8-12 " # dec,
+  organisation = "IEEE Neural Network Council (NNC), Engineers Australia
+                 (IEAust), Evolutionary Programming Society (EPS),
+                 Institution of Electrical Engineers (IEE)",
+  keywords =     "genetic algorithms, genetic programming",
+  ISBN =         "0-7803-7804-0",
+  abstract =     "A new technique for saving computing resources when
+                 using Genetic Programming is presented in this work.
+                 Instead of directly fighting bloat -the main factor
+                 explaining the large computational cost required for
+                 the evaluation of generations- by acting on
+                 individuals, we apply a new operator to the whole
+                 population: the plague. By removing some individuals
+                 every generation, we compensate for the increase in
+                 size of individuals, thus saving computing time when
+                 looking for solutions.",
+  notes =        "CEC 2003 - A joint meeting of the IEEE, the IEAust,
+                 the EPS, and the IEE.",
+}
+
+@InProceedings{fernandez03,
+  author =       "Francisco Fernandez and Leonardo Vanneschi and 
+                 Marco Tomassini",
+  title =        "The Effect of Plagues in Genetic Programming: {A}
+                 Study of Variable-Size Populations",
+  booktitle =    "Genetic Programming, Proceedings of EuroGP'2003",
+  year =         "2003",
+  editor =       "Conor Ryan and Terence Soule and Maarten Keijzer and 
+                 Edward Tsang and Riccardo Poli and Ernesto Costa",
+  volume =       "2610",
+  series =       "LNCS",
+  pages =        "317--326",
+  address =      "Essex",
+  publisher_address = "Berlin",
+  month =        "14-16 " # apr,
+  organisation = "EvoNet",
+  publisher =    "Springer-Verlag",
+  keywords =     "genetic algorithms, genetic programming",
+  ISBN =         "3-540-00971-X",
+  abstract =     "A study on the effect of variable size populations in
+                 genetic programming is presented in this work. We apply
+                 the idea of plague (high desease of individuals). We
+                 show that although plagues are generally considered as
+                 negative events, they can help populations to save
+                 computing time and at the same time surviving
+                 individuals can reach high peaks in the fitness
+                 landscape.",
+  notes =        "EuroGP'2003 held in conjunction with EvoWorkshops
+                 2003",
+}
+
+@InProceedings{devega:2003:CEMAEB,
+  author =       "Francisco Fernandez {de Vega}",
+  title =        "Estudio de Poblaciones de tama\~{n}o variable en
+                 Programacion Genetica",
+  booktitle =    "Actas del II Congreso Espa\~{n}ol sobre
+                 Metaheuristicas, Algoritmos Evolutivos y
+                 Bioinspirados",
+  year =         "2003",
+  pages =        "424--428",
+  month =        feb,
+  keywords =     "genetic algorithms, genetic programming, bloat",
+  URL =          "http://cum.unex.es/profes/profes/fcofdez/escritorio/investigacion/pgp/papers/maeb04.pdf",
+  abstract =     "En este trabajo presentamos un estudio sobre el efecto
+                 de poblaciones de tama\~{n}o variable en Programacion
+                 Genetica. Por medio de una serie de experimentos
+                 mostramos que la supresion sistematica de un n\'{u}mero
+                 fijo de individuos a lo largo de varias generaciones
+                 puede ayudar a reducir el esfuerzo computacional
+                 requerido en la b\'{u}squeda de soluciones a problemas.
+                 Por otro lado, la calidad de las soluciones encontradas
+                 no se ve afectada de forma significativa por la
+                 eliminacion de un n\'{u}mero peque\~{n}o de individuos
+                 en cada generacion.",
+  size =         "6 pages",
+  notes =        "in spanish",
+}
+
+@InProceedings{tomassini:ppsn2002:pp641,
+  author =       "Marco Tomassini and Leonardo Vanneschi and 
+                 Francisco Fernandez and German Galeano",
+  title =        "Experimental Investigation Of Three Distributed
+                 Genetic Programming Models",
+  booktitle =    "Parallel Problem Solving from Nature - PPSN VII",
+  address =      "Granada, Spain",
+  month =        "7-11 " # sep,
+  pages =        "641--650",
+  year =         "2002",
+  editor =       "Juan J. Merelo-Guervos and Panagiotis Adamidis and 
+                 Hans-Georg Beyer and Jose-Luis Fernandez-Villacanas and 
+                 Hans-Paul Schwefel",
+  number =       "2439",
+  series =       "Lecture Notes in Computer Science, LNCS",
+  publisher =    "Springer-Verlag",
+  keywords =     "genetic algorithms, genetic programming, Parallel
+                 EAs",
+  ISBN =         "3-540-44139-5",
+  URL =          "http://link.springer.de/link/service/series/0558/bibs/2439/24390641.htm",
+  URL =          "http://link.springer.de/link/service/series/0558/papers/2439/24390641.pdf",
+  URL =          "http://www.springerlink.com/openurl.asp?genre=article&issn=0302-9743&volume=2439&spage=641",
+  abstract =     "Three models of distributed Genetic Programming are
+                 presented comprising synchronous and asynchronous
+                 communication. These three models are compared with
+                 each other and with the standard panmictic model on
+                 three well known Genetic Programming benchmarks. The
+                 measures used are the computational effort, the
+                 phenotypic entropy of the populations, and the
+                 execution time. We find that all the distributed models
+                 are better than the sequential one in terms of effort
+                 and time. The differences among the distributed models
+                 themselves are rather small in terms of effort but one
+                 of the asynchronous models turns out to be
+                 significantly faster. The entropy confirms that
+                 migration helps in conserving some phenotypic diversity
+                 in the populations.",
+}
+
+@InProceedings{galeano:2002:stiosaapgople,
+  author =       "G. Galeano and F. Fernandez and M. Tomassini and 
+                 L. Vanneschi",
+  title =        "Studying the influence of Synchronous and Asynchronous
+                 parallel {GP} on Programs' Length Evolution",
+  booktitle =    "Proceedings of the 2002 Congress on Evolutionary
+                 Computation CEC2002",
+  editor =       "David B. Fogel and Mohamed A. El-Sharkawi and 
+                 Xin Yao and Garry Greenwood and Hitoshi Iba and Paul Marrow and 
+                 Mark Shackleton",
+  pages =        "1727--1732",
+  year =         "2002",
+  publisher =    "IEEE Press",
+  publisher_address = "445 Hoes Lane, P.O. Box 1331, Piscataway, NJ
+                 08855-1331, USA",
+  organisation = "IEEE Neural Network Council (NNC), Institution of
+                 Electrical Engineers (IEE), Evolutionary Programming
+                 Society (EPS)",
+  ISBN =         "0-7803-7278-6",
+  notes =        "CEC 2002 - A joint meeting of the IEEE, the
+                 Evolutionary Programming Society, and the IEE. Held in
+                 connection with the World Congress on Computational
+                 Intelligence (WCCI 2002)",
+  keywords =     "genetic algorithms, genetic programming",
+  abstract =     "We present a study of parallel and distributed genetic
+                 programming models and their relationships with the
+                 bloat phenomenon. The experiments that we have
+                 performed have also allowed us to find an interesting
+                 link between the number of processes, subpopulations
+                 and the model we should use when applying parallelism
+                 to GP. We study the synchronous and asynchronous
+                 version of the island-model in GP domain.",
+}
+
+@InProceedings{fernandez:2001:soprvpmrp,
+  author =       "F. Fernandez and M. Tomassini",
+  title =        "Studying the Optimal Parameter Range of Values in
+                 {PADGP} by Means of Real-life Problems",
+  booktitle =    "Proceedings of the 2001 Congress on Evolutionary
+                 Computation CEC2001",
+  year =         "2001",
+  pages =        "436--441",
+  address =      "COEX, World Trade Center, 159 Samseong-dong,
+                 Gangnam-gu, Seoul, Korea",
+  publisher_address = "445 Hoes Lane, P.O. Box 1331, Piscataway, NJ
+                 08855-1331, USA",
+  month =        "27-30 " # may,
+  organisation = "IEEE Neural Network Council (NNC), Evolutionary
+                 Programming Society (EPS), Institution of Electrical
+                 Engineers (IEE)",
+  publisher =    "IEEE Press",
+  keywords =     "genetic algorithms, genetic programming, Parallel
+                 Genetic Programming, FPGA",
+  ISBN =         "0-7803-6658-1",
+  notes =        "CEC-2001 - A joint meeting of the IEEE, Evolutionary
+                 Programming Society, Galesia, and the IEE.
+
+                 IEEE Catalog Number = 01TH8546C,
+
+                 Library of Congress Number =",
+}
+
+@InProceedings{fernandez:2001:gecco,
+  title =        "A new methodology for the Placement and Routing
+                 problem based on {PADGP}",
+  author =       "F. Fernandez and J. M. Sanchez and M. Tomassini",
+  pages =        "175",
+  year =         "2001",
+  publisher =    "Morgan Kaufmann",
+  booktitle =    "Proceedings of the Genetic and Evolutionary
+                 Computation Conference (GECCO-2001)",
+  editor =       "Lee Spector and Erik D. Goodman and Annie Wu and 
+                 W. B. Langdon and Hans-Michael Voigt and Mitsuo Gen and 
+                 Sandip Sen and Marco Dorigo and Shahram Pezeshk and 
+                 Max H. Garzon and Edmund Burke",
+  address =      "San Francisco, California, USA",
+  publisher_address = "San Francisco, CA 94104, USA",
+  month =        "7-11 " # jul,
+  keywords =     "genetic algorithms, genetic programming: Poster,
+                 Parallel Evolutionary Algorithms, Evolvable Hardware",
+  ISBN =         "1-55860-774-9",
+  URL =          "http://www.cs.bham.ac.uk/~wbl/biblio/gecco2001/d02.pdf",
+  notes =        "GECCO-2001 A joint meeting of the tenth International
+                 Conference on Genetic Algorithms (ICGA-2001) and the
+                 sixth Annual Genetic Programming Conference (GP-2001)
+                 Part of \cite{spector:2001:GECCO}",
+}
+
+@InProceedings{fernandez:2001:EuroGP,
+  author =       "Francisco Fernandez and Marco Tomassini and 
+                 Leonardo Vanneschi",
+  title =        "Studying the Influence of Communication Topology and
+                 Migration on Distributed Genetic Programming",
+  booktitle =    "Genetic Programming, Proceedings of EuroGP'2001",
+  year =         "2001",
+  editor =       "Julian F. Miller and Marco Tomassini and 
+                 Pier Luca Lanzi and Conor Ryan and Andrea G. B. Tettamanzi and 
+                 William B. Langdon",
+  volume =       "2038",
+  series =       "LNCS",
+  pages =        "51--63",
+  address =      "Lake Como, Italy",
+  publisher_address = "Berlin",
+  month =        "18-20 " # apr,
+  organisation = "EvoNET",
+  publisher =    "Springer-Verlag",
+  keywords =     "genetic algorithms, genetic programming, Distributed
+                 Genetic Programming, Parallelism, Multipopulation
+                 structures, Parallel evolutionary algorithms",
+  ISBN =         "3-540-41899-7",
+  URL =          "http://www.springerlink.com/openurl.asp?genre=article&issn=0302-9743&volume=2038&spage=51",
+  size =         "13 pages",
+  abstract =     "In this paper we present a systematic experimental
+                 study of some of the parameters influencing parallel
+                 and distributed genetic programming (PADGP) by using
+                 three benchmark problems. We first present results on
+                 the system's communication topology and then we study
+                 the parameters governing individual migration between
+                 subpopulations: the number of individuals sent and the
+                 frequency of exchange. Our results suggest that fitness
+                 evolution is more sensitive to the migration factor
+                 than the communication topology.",
+  notes =        "EuroGP'2001, part of \cite{miller:2001:gp}",
+}
+
+@InProceedings{fernandez:2001:,
+  author =       "F. Fernandez and J. M. Sanchez and M. Tomassini",
+  title =        "Placing and Routing Circuits on {FPGA}s by Means of
+                 Parallel and Distributed Genetic Programming",
+  booktitle =    "Evolvable Systems: From Biology to Hardware,
+                 Proceedings of the 4th International Conference, ICES
+                 2001",
+  series =       "Lecture Notes in Computer Science",
+  editor =       "Yong Liu and Kiyoshi Tanaka and Masaya Iwata and 
+                 Tetsuya Higuchi and Moritoshi Yasunaga",
+  volume =       "2210",
+  pages =        "204--214",
+  publisher =    "Springer-Verlag",
+  ISBN =         "3-540-42671-X",
+  ISSN =         "0302-9743",
+  year =         "2001",
+  month =        "3-5 Octpber",
+  address =      "Tokyo, Japan",
+  keywords =     "genetic algorithms, genetic programming, evolvable
+                 hardware, PADGP",
+  ISBN =         "3-540-42671-X",
+  ISSN =         "0302-9743",
+  URL =          "http://www.springerlink.com/openurl.asp?genre=article&issn=0302-9743&volume=2210&spage=204",
+  size =         "12 pages",
+  abstract =     "We present results on the application of a new
+                 methodology based on Parallel and Distributed Genetic
+                 Programming (PADGP). The aim for the methodology we
+                 present is to automatically perform the placement and
+                 routing of circuits on reconfigurable hardware. The
+                 system has been successfully applied to some benchmark
+                 problems. For each of the problems we have dealt with,
+                 the methodology is capable of finding several
+                 solutions. The results show the methodology's
+                 feasibility for addressing the problem of placement and
+                 routing on FPGAs.",
+  notes =        "island-based FPGAs eg Xilinx. Digital circuits.
+                 Connecting circuits given by syntax of evolved GP
+                 tree.",
+}
+
+@InProceedings{vega:2000:mgpabd,
+  author =       "F. Fernandez {de Vega} and Laura M. Roa and 
+                 Marco Tomassini and J. M. Sanchez",
+  title =        "Multipopulation Genetic Programing Applied to Burn
+                 Diagnosing",
+  booktitle =    "Proceedings of the 2000 Congress on Evolutionary
+                 Computation CEC00",
+  year =         "2000",
+  pages =        "1292--1296",
+  address =      "La Jolla Marriott Hotel La Jolla, California, USA",
+  publisher_address = "445 Hoes Lane, P.O. Box 1331, Piscataway, NJ
+                 08855-1331, USA",
+  month =        "6-9 " # jul,
+  organisation = "IEEE Neural Network Council (NNC), Evolutionary
+                 Programming Society (EPS), Institution of Electrical
+                 Engineers (IEE)",
+  publisher =    "IEEE Press",
+  keywords =     "genetic algorithms, genetic programming, novel
+                 applications i",
+  ISBN =         "0-7803-6375-2",
+  notes =        "CEC-2000 - A joint meeting of the IEEE, Evolutionary
+                 Programming Society, Galesia, and the IEE.
+
+                 IEEE Catalog Number = 00TH8512,
+
+                 Library of Congress Number = 00-018644",
+}
+
+@InProceedings{fernandez:2000:esmpGP,
+  author =       "F. Fernandez and M. Tomassini and 
+                 W. F. {Punch III} and J. M. Sanchez",
+  title =        "Experimental Study of Multipopulation Parallel Genetic
+                 Programming",
+  booktitle =    "Genetic Programming, Proceedings of EuroGP'2000",
+  year =         "2000",
+  editor =       "Riccardo Poli and Wolfgang Banzhaf and 
+                 William B. Langdon and Julian F. Miller and Peter Nordin and 
+                 Terence C. Fogarty",
+  volume =       "1802",
+  series =       "LNCS",
+  pages =        "283--293",
+  address =      "Edinburgh",
+  publisher_address = "Berlin",
+  month =        "15-16 " # apr,
+  organisation = "EvoNet",
+  publisher =    "Springer-Verlag",
+  keywords =     "genetic algorithms, genetic programming",
+  ISBN =         "3-540-67339-3",
+  URL =          "http://garage.cse.msu.edu/papers/GARAGe00-03-01.pdf",
+  URL =          "http://citeseer.ist.psu.edu/445504.html",
+  URL =          "http://www.springerlink.com/openurl.asp?genre=article&issn=0302-9743&volume=1802&spage=283",
+  doi =          "doi:10.1007/b75085",
+  size =         "11 pages",
+  abstract =     "The parallel execution of several populations in
+                 evolutionary algorithms has usually given good results.
+                 Nevertheless, researchers have to date drawn
+                 conflicting conclusions when using some of the parallel
+                 genetic programming models. One aspect of the conflict
+                 is population size, since published GP works do not
+                 agree about whether to use large or small populations.
+                 This paper presents an experimental study of a number
+                 of common GP test problems. Via our experiments, we
+                 discovered that an optimal range of values exists. This
+                 assists us in our choice of population size and in the
+                 selection of an appropriate parallel genetic
+                 programming model. Finding efficient parameters helps
+                 us to speed up our search for solutions. At the same
+                 time, it allows us to locate features that are common
+                 to parallel genetic programming and the classic genetic
+                 programming technique.",
+  notes =        "EuroGP'2000, part of \cite{poli:2000:GP}",
+}
+
+@InProceedings{fernandez:2000:esimgp,
+  author =       "F. Fernandez and M. Tomassini and J. M. Sanchez",
+  title =        "Experimental Study of Isolated Multipopulation Genetic
+                 Programming",
+  booktitle =    "Proceedings of the 26th Annual Conference of the IEEE
+                 Industrial Electronics Society",
+  volume =       "1697",
+  pages =        "2672--2677",
+  publisher =    "IEEE Press",
+  ISBN =         "0-7803-6456-2",
+  year =         "2000",
+  month =        oct,
+  address =      "Nagoya, Japan",
+  keywords =     "genetic algorithms, genetic programming",
+  URL =          "http://fp.ieeexplore.ieee.org/iel5/7662/20956/00972420.pdf?isNumber=20956&prod=CNF&arnumber=00972420",
+  abstract =     "In this paper we present results obtained when
+                 comparing classic genetic programming (GP) with the
+                 isolated multipopulation version. Our first discovery
+                 was that sometimes, given a certain number of
+                 individuals, it is useful to distribute them among
+                 several populations even when no communication is
+                 allowed. This consequently lead to research
+                 concentrating on three main questions: firstly, how to
+                 distribute individuals according to the problem in
+                 hand; secondly, how many populations must be employed
+                 in proportion to the effort and fitness involved when
+                 solving a problem; and finally, how to use isolated
+                 multipopulation GP in the classification of problems.",
+}
+
+@InProceedings{fernandez:2000:GA,
+  author =       "Francisco Fernandez and Marco Tomassini",
+  title =        "Genetic programming and reconfigurable hardware: {A}
+                 proposal for solving the problem of placement and
+                 routing",
+  booktitle =    "Graduate Student Workshop",
+  year =         "2000",
+  editor =       "Conor Ryan and Una-May O'Reilly and 
+                 William B. Langdon",
+  pages =        "265--268",
+  address =      "Las Vegas, Nevada, USA",
+  month =        "8 " # jul,
+  keywords =     "genetic algorithms, genetic programming",
+  notes =        "GECCO-2000WKS Part of \cite{wu:2000:GECCOWKS}",
+}
+
+@InProceedings{Fernandez:2000:GECCO,
+  author =       "Francisco Fernandez and Marco Tomassini and 
+                 William Punch and J. M. Sanchez",
+  title =        "Experimental Study of Isolated Multipopulation Genetic
+                 Programming",
+  pages =        "536",
+  year =         "2000",
+  publisher =    "Morgan Kaufmann",
+  booktitle =    "Proceedings of the Genetic and Evolutionary
+                 Computation Conference (GECCO-2000)",
+  editor =       "Darrell Whitley and David Goldberg and 
+                 Erick Cantu-Paz and Lee Spector and Ian Parmee and Hans-Georg Beyer",
+  address =      "Las Vegas, Nevada, USA",
+  publisher_address = "San Francisco, CA 94104, USA",
+  month =        "10-12 " # jul,
+  keywords =     "genetic algorithms, genetic programming, Poster",
+  ISBN =         "1-55860-708-0",
+  URL =          "http://www.cs.bham.ac.uk/~wbl/biblio/gecco2000/GP159.pdf",
+  URL =          "http://www.cs.bham.ac.uk/~wbl/biblio/gecco2000/GP159.ps",
+  notes =        "A joint meeting of the ninth International Conference
+                 on Genetic Algorithms (ICGA-2000) and the fifth Annual
+                 Genetic Programming Conference (GP-2000) Part of
+                 \cite{whitley:2000:GECCO}",
+}
+
+@InProceedings{FTVB00,
+  author =       "F. Fernandez and M. Tomassini and L. Vanneschi and 
+                 L. Bucher",
+  title =        "A Distributed Computing Environment for Genetic
+                 Programming using {MPI}",
+  editor =       "J. J. Dongarra and Peter Kacsuk and 
+                 Norbert Podhorszki",
+  booktitle =    "Recent advances in parallel virtual machine and
+                 message passing interface: 7th European {PVM\slash MPI}
+                 Users' Group Meeting",
+  volume =       "1908",
+  publisher =    "Springer-Verlag",
+  address =      "Balatonfured, Hungary",
+  pages =        "322--329",
+  year =         "2000",
+  ISBN =         "3-540-41010-4 (softcover)",
+  ISSN =         "0302-9743",
+  bibdate =      "Mon Oct 16 18:31:56 MDT 2000",
+  series =       "Lecture Notes in Computer Science",
+  month =        "10-13 " # sep,
+  keywords =     "genetic algorithms, genetic programming",
+}
+
+@InProceedings{fernandez:1999:SAEP,
+  author =       "Francisco Fernandez and Marco Tomassini and 
+                 J. M. Sanchez",
+  title =        "Solving the Ant and the Even Parity-5 problems by
+                 means of parallel genetic programming",
+  booktitle =    "Late Breaking Papers at the 1999 Genetic and
+                 Evolutionary Computation Conference",
+  year =         "1999",
+  editor =       "Scott Brave and Annie S. Wu",
+  pages =        "88--92",
+  address =      "Orlando, Florida, USA",
+  month =        "13 " # jul,
+  keywords =     "Genetic Algorithms, Genetic Programming",
+  notes =        "GECCO-99LB",
+}
+
+@InProceedings{FSTG99,
+  author =       "F. Fernandez and J. M. Sanchez and M. Tomassini and 
+                 J. A. Gomez",
+  title =        "A Parallel Genetic Programming Tool based on {PVM}",
+  booktitle =    "Recent Advances in Parallel Virtual Machine and
+                 Message Passing Interface, Proceedings of the 6th
+                 European PVM/MPI Users' Group Meeting",
+  series =       "Lecture Notes in Computer Science",
+  editor =       "J. Dongarra and E. Luque and T. Margalef",
+  volume =       "1697",
+  pages =        "241--248",
+  publisher =    "Springer-Verlag",
+  ISBN =         "3-540-66549-8",
+  year =         "1999",
+  month =        sep,
+  address =      "Barcelona, Spain",
+  keywords =     "genetic algorithms, genetic programming",
+}
+
+@InProceedings{fernandez:2002:EuroGP,
+  title =        "Comparing Synchronous and Asynchronous Parallel and
+                 Distributed {GP} Models",
+  author =       "Francisco Fernandez and G. Galeano and J. A. Gomez",
+  editor =       "James A. Foster and Evelyne Lutton and 
+                 Julian Miller and Conor Ryan and Andrea G. B. Tettamanzi",
+  booktitle =    "Genetic Programming, Proceedings of the 5th European
+                 Conference, EuroGP 2002",
+  volume =       "2278",
+  series =       "LNCS",
+  pages =        "326--335",
+  publisher =    "Springer-Verlag",
+  address =      "Kinsale, Ireland",
+  publisher_address = "Berlin",
+  month =        "3-5 " # apr,
+  year =         "2002",
+  keywords =     "genetic algorithms, genetic programming",
+  ISBN =         "3-540-43378-3",
+  URL =          "http://link.springer-ny.com/link/service/series/0558/bibs/2278/22780326.htm",
+  URL =          "http://link.springer-ny.com/link/service/series/0558/papers/2278/22780326.pdf",
+  abstract =     "In this paper we present a study that analyses the
+                 respective advantages and disadvantages of the
+                 synchronous and asynchronous versions of island-based
+                 genetic programming. We also look at different
+                 measuring systems for comparing parallel genetic
+                 programming with panmitic model. At the same time we
+                 show an interesting relationship between the bloat
+                 phenomenon and the number of individuals we use.
+                 Finally, we study a relationship between the number of
+                 subpopulations in parallel GP and the advantages of the
+                 asynchronous model.",
+  notes =        "EuroGP'2002, part of lutton:2002:GP.
+
+                 Santa Fe Ant, even-5-parity. padgp",
+}
+
+@InCollection{Fernandez:2005:pm,
+  author =       "Francisco Fernandez and Giandomenico Spezzano and 
+                 Marco Tomassini and Leonardo Vanneschi",
+  title =        "Parallel Genetic Programming",
+  booktitle =    "Parallel Metaheuristics",
+  publisher =    "Wiley-Interscience",
+  year =         "2005",
+  editor =       "Enrique Alba",
+  series =       "Parallel and Distributed Computing",
+  chapter =      "6",
+  pages =        "127--153",
+  address =      "Hoboken, New Jersey, USA",
+  keywords =     "genetic algorithms, genetic programming, island model,
+                 grid cellular structure, placement FPGA, EHW, cellular
+                 genetic programming, ensemble of classifiers, CGPC,
+                 bagCGPC",
+  ISBN =         "0-471-67806-6",
+  notes =        "Last example uses UCI cens (299285 tuples), 16 linux
+                 myrinet pentium III nodes",
+  size =         "27 pages",
+}
+
+@InCollection{fernandez2004,
+  author =       "F. Fernandez and J. I. Hidalgo and J. M. Sanchez and 
+                 J. Lanchares",
+  title =        "An Evolutionary Approach to Multi-{FPGA}s System
+                 Synthesis",
+  booktitle =    "Evolvable Machines: Theory \& Practice",
+  publisher =    "Springer",
+  year =         "2004",
+  editor =       "Nadia Nedjah and Luiza {de Macedo Mourelle}",
+  volume =       "161",
+  series =       "Studies in Fuzziness and Soft Computing",
+  chapter =      "7",
+  pages =        "151--177",
+  address =      "Berlin Hidelberg Germany",
+  keywords =     "genetic algorithms, genetic programming,
+                 reconfigurable hardware",
+  ISBN =         "3-540-22905-1",
+  URL =          "http://www.springeronline.com/sgw/cda/frontpage/0,11855,5-175-22-33980449-0,00.html",
+  notes =        "Springer says published in 2005 but available Nov
+                 2004",
+}
+
