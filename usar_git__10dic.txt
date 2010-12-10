@@ -1,0 +1,25 @@
+
+CLONAR EL REPOSITORIO REMOTO EN LOCAL
+git clone pedro@geneura.ugr.es:/var/share/repo/bib
+
+ cd bib/
+ touch pedro-prueba.bib
+ 
+AÑADIR AL REPOSITORIO LOCAL UN ARCHIVO:
+git add pedro-prueba.bib
+ 
+git commit -m "comentario sobre lo que sea"
+
+ACTUALIZAR EL REPO-LOCAL CON LO QUE HAYAN METIDO OTROS:
+git pull pedro@geneura.ugr.es:/var/share/repo/bib
+
+SUBIR EL ARCHIVO SUBIDO EN EL REPO-LOCAL AL REPOSITORIO REMOTO:
+git push pedro@geneura.ugr.es:/var/share/repo/bib master
+
+
+
+
+
+
+ESC : w !   {pa escribir}
+ESC : q !   {pa salir del vim}
